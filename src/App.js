@@ -79,7 +79,7 @@ export default function App() {
       </nav>
 
       <div style={containerCenter}>
-        <h1>What to watch?</h1>
+        <h1 style={{ margin: "0.5rem" }}>What to watch?</h1>
 
         <div>
           {Object.keys(seriesData).map((type) => (
