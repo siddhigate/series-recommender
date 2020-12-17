@@ -37,15 +37,16 @@ buttonStyle = {
   borderRadius: "2rem",
   padding: "0.5rem 1rem",
   border: "2px solid #A78BFA",
-  margin: "0.5rem"
+  marginLeft: "1rem",
+  marginTop: "1rem"
 };
 
 listStyle = {
   listStyle: "none",
   padding: "1rem",
   border: "1px solid #D1D5DB",
-  width: "90%",
-  margin: "1rem 0rem",
+  width: "80%",
+  margin: "1rem 1rem",
   borderRadius: "0.5rem",
   background: "#DDD6FE"
 };
@@ -60,7 +61,7 @@ smallFont = {
 
 navBrand = {
   textAlign: "left",
-  fontSize: "1.5rem"
+  fontSize: "1.25rem"
 };
 
 const containerCenter = { "max-width": "500px", margin: "auto" };
@@ -79,7 +80,7 @@ export default function App() {
       </nav>
 
       <div style={containerCenter}>
-        <h1 style={{ margin: "0.5rem" }}>What to watch?</h1>
+        <h1 style={{ margin: "1rem" }}>What to watch?</h1>
 
         <div>
           {Object.keys(seriesData).map((type) => (
@@ -89,7 +90,7 @@ export default function App() {
           ))}
         </div>
 
-        <div style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "left", marginTop: "1.5rem" }}>
           <ul style={{ paddingInlineStart: "0" }}>
             {seriesData[selectedType].map((type) => (
               <li style={listStyle}>
